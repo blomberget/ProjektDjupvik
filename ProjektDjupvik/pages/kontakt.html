@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <title>Kontakt - Djupviks Hamn</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../assets/style.css">
+  </head>
+
+  <body>
+    <header>
+      <h1><a href="../index.html">Djupviks Hamn</a></h1>
+    </header>  
+
+          <nav>
+            <div class="dropdown">
+                <button class="dropbtn">Besök Djupvik</button>
+                <div class="dropdown-content">
+                <a href="./gastplats.html">Gästplats</a>
+                <a href="./turistmal.html">Turistmål</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">För medlemmar</button>
+                <div class="dropdown-content">
+                <a href="./medlemsinfo.html">Medlemsinfo</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Om oss</button>
+                <div class="dropdown-content">
+                <a href="./historia.html">Historia</a>
+                <a href="./kontakt.html">Kontakta oss</a>
+
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">English</button>
+                <div class="dropdown-content">
+                <a href="./english.html">About Djupvik</a>
+                </div>
+            </div>
+          </nav>
+
+          <main>
+              <div class="kontakt">
+              <article>
+              <h2>Kontakta Oss</h2>
+              <h3>Kontaktuppgifter</h3>
+              <p>
+                Hamnfogde Bo Lautin, mobil 0707-920310 <br><br>
+                
+                Djupviks hamnförening <br>
+                c/o Ekholm <br>
+                Eksta Hägur 170 <br>
+                623 54 Klintehamn</p>
+            </article>
+
+            <form method="post" action="#">
+                <fieldset>
+                    <legend><h2>Kontaktformulär</h2></legend>
+                    <p>
+                      <label for="ämne" id="amne" >Ämne *:</label>
+                      <input type="text" id="ämne" name="ämne"><br><br>
+
+                    <label for="beskrivning" id="besk">Beskrivning utav ärendet *:</label><br>
+                    <textarea name="beskrivning" rows="2" cols="30" id="beskrivning"></textarea> <br><br>
+                    </p>
+                    </fieldset>
+
+                    <fieldset>
+                    <legend>Ärendet gäller *: </legend>
+                      <p>
+                        <input type="radio" id="Båtplats" name="kategori" value="Båtplats">
+                        <label for="Båtplats">Båtplats</label><br><br> 
+                      
+                        <input type="radio" id="Medlem" name="kategori" value="Medlem">
+                        <label for="Medlem">Memdlemsärende</label><br><br> 
+                      
+                        <input type="radio" id="Övrigt" name="kategori" value="Övrigt">
+                        <label for="Övrigt">Övrigt</label><br><br> </p>
+                      </fieldset>
+
+                      <fieldset>
+                      <legend>Hur vill du bli kontaktad: </legend>
+                      <p>
+                        <select name = "dropdown">
+                          <option value = "Mail">Mail</option>
+                          <option value = "Telefon">Telefon</option>
+                          <option value = "Inget">Inget</option>
+                        </select>
+                      </p>
+                    
+                      <p>
+                        <label for="telefon" id="tele">Telefon *:</label>
+                        <input type="text" id="telefon" name="telefon"><br><br> </p>
+                      <p>
+                        <label for="email" id="mail">Mail *:</label>
+                        <input type="text" id="email" name="email"><br><br> </p>
+                      <p>
+                        <input type="submit" value="Skicka">
+                       </p>
+                  </fieldset>
+                </form>
+              <picture>
+                <source srcset="../images/D-1-L.jpg" media="(max-width: 450px)">
+                  
+                <source srcset="../images/D-1-T.jpg" media="(max-width: 920px)">
+
+                <source srcset="../images/D-1-D.jpg" media="(max-width: 1024px)">
+
+                <img src="../images/D-1.jpg" alt="Man som står i regnkappa och fiskar på en brygga vid havet." width="2464" height="1632">
+              </picture>
+              </div>
+        </main>
+            
+        <footer>
+            <p>&#169; Djupviks Hamn </p>
+        </footer>
+  </body>
+</html>
